@@ -50,9 +50,8 @@ collaborative_notes:             # optional: URL for the workshop collaborative 
   can use https://itouchmap.com/latlong.html to find the lat/long of an
   address.
 {% endcomment %}
-<p <strong>Where:</strong>
+<strong>Where:</strong>
   Room 1.
-</p>
 
 {% comment %}
   DATE

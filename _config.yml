@@ -10,7 +10,7 @@
 carpentry: "swc"
 
 # Overall title for pages.
-title: "Workshop Title"
+title: "AI Python Bootcamp"
 
 
 #------------------------------------------------------------
@@ -26,7 +26,7 @@ kind: "workshop"
 repository: <USERNAME>/<PROJECT>
 
 # Email address, no mailto:
-# (Don't change this -- the contact address for your workshop will be set 
+# (Don't change this -- the contact address for your workshop will be set
 # in the index.md file)
 email: "team@carpentries.org"
 

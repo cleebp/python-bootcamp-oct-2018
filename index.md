@@ -233,11 +233,4 @@ collaborative_notes:             # optional: URL for the workshop collaborative 
       </ol>
     </div>
   </div>
-{% comment %}
-  <p>
-  Once you are done installing the software listed above,
-  please go to <a href="setup/index.html">this page</a>,
-  which has instructions on how to test that everything was installed correctly.
-  </p>
-{% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}

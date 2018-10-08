@@ -11,7 +11,7 @@ humantime: "9:00 am - 3:00 pm"    # human-readable times for the workshop (e.g.,
 startdate: 2018-10-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-10-09        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Brian Clee"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Dan Salo, Joe Peck"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["_dan_salo, _joe_peck"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["bclee@automatedinsights.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://docs.google.com/document/d/1m3_nEheECQHdVsu_kHMSrVLrZpfaSzxEux64SRU5SaM/edit?usp=sharing  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document\
 ---
@@ -23,19 +23,8 @@ the entire `swc-python` folder and place in your development directory, we will 
 
 <h2 id="general">General Information</h2>
 
-{% if page.carpentry == "swc" %}
-  {% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/intro.html %}
-{% endif %}
-
 {% comment %}
   AUDIENCE
-
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
 {% endcomment %}
 {% if page.carpentry == "swc" %}
   {% include sc/who.html %}
@@ -47,11 +36,6 @@ the entire `swc-python` folder and place in your development directory, we will 
 
 {% comment %}
   LOCATION
-
-  This block displays the address and links to maps showing directions
-  if the latitude and longitude of the workshop have been set.  You
-  can use https://itouchmap.com/latlong.html to find the lat/long of an
-  address.
 {% endcomment %}
 <strong>Where:</strong>
   Room 1.
@@ -65,7 +49,6 @@ the entire `swc-python` folder and place in your development directory, we will 
 <p id="when">
   <strong>When:</strong>
   {{page.humandate}}.
-  {% include workshop_calendar.html %}
 </p>
 {% endif %}
 
@@ -111,8 +94,8 @@ the entire `swc-python` folder and place in your development directory, we will 
 {% comment %}
  SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
+<h2 id="surveys">Survey</h2>
+<p>Please be sure to complete this survey after the workshop (LINK WILL BE POSTED SOON).</p>
 
 <hr/>
 
@@ -154,37 +137,15 @@ the entire `swc-python` folder and place in your development directory, we will 
   <h3>Python</h3>
 
   <p>
-    <a href="https://python.org">Python</a> is a popular language for
-    research computing, and great for general-purpose programming as
-    well.  Installing all of its research packages individually can be
-    a bit difficult, so we recommend
-    <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
-    an all-in-one installer.
+    Regardless of how you choose to install it,
+    <strong>please make sure you install Python version 3.x</strong>
+    (e.g., 3.6 is fine).
   </p>
 
-    <p>
-      Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.6 is fine).
-    </p>
-
-    <p>
-      We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
-      a programming environment that runs in a web browser. For this to work you will need a reasonably
-      up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all
-      <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
-      (some older browsers, including Internet Explorer version 9
-      and below, are not).
-    </p>
-
-    <div class="col-md-4">
-      <h4 id="python-macosx">macOS</h4>
-      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
-      <ol>
-        <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
-        <li>Download the Python 3 installer for OS X.</li>
-        <li>Install Python 3 using all of the defaults for installation.</li>
-      </ol>
-    </div>
+  <p>
+    I reccommend directly installing Python 3.6.6 to your system root, this will give you the most control over your python configuration.
+    You can install the files from the bottom of <a href="https://www.python.org/downloads/release/python-366/">this page</a>.
+    Alternatively you can install the <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
+    all-in-one installer - a mores streamlined system setup that will require less configuration but give you less control.
+  </p>
 </div> {% comment %} End of 'Python' section. {% endcomment %}

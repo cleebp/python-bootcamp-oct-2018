@@ -13,10 +13,13 @@ enddate: 2018-10-09        # machine-readable end date for the workshop in YYYY-
 instructor: ["Brian Clee"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Dan Salo, Joe Peck"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["bclee@automatedinsights.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document\
+collaborative_notes: https://docs.google.com/document/d/1m3_nEheECQHdVsu_kHMSrVLrZpfaSzxEux64SRU5SaM/edit?usp=sharing  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document\
 ---
 
-<h4>Welcome to the landing page for AI's Python Bootcamp. Here you will find schedule and setup info, along with other helpful links.</h4>
+<h4>Welcome to the landing page for AI's Python Bootcamp. Here you will find schedule and setup info. The workshop files are hosted on Google Drive
+<a href="https://drive.google.com/drive/folders/1eh2PH9Wd-lsLHEfaenHtlsNw9MFXqeUa?usp=sharing">here</a>, please Download
+the entire `swc-python` folder and place in your development directory, we will be working out of its root. A shared google doc is located
+<a href="https://docs.google.com/document/d/1m3_nEheECQHdVsu_kHMSrVLrZpfaSzxEux64SRU5SaM/edit?usp=sharing">here</a> for collaborative notetaking.</h4>
 
 <h2 id="general">General Information</h2>
 
@@ -73,7 +76,7 @@ collaborative_notes:             # optional: URL for the workshop collaborative 
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring their mac laptop with a
-  text editor of choice installed. They should have a few specific software packages installed (listed
+  text editor of choice installed. They should have Python 3.6.6 installed (listed
   <a href="#setup">below</a>).
 </p>
 
@@ -133,13 +136,6 @@ collaborative_notes:             # optional: URL for the workshop collaborative 
 
 {% comment %}
   Collaborative Notes
-
-  If you want to use an Etherpad, go to
-
-      http://pad.software-carpentry.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop,
-  e.g., '2015-06-10-esu'.
 {% endcomment %}
 {% if page.collaborative_notes %}
 <p id="collaborative_notes">
